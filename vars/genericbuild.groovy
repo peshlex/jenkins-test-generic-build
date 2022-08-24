@@ -9,6 +9,7 @@ node {
             echo 'Building....'
             // sh 'dotnet --version'
             // sh 'dotnet build ConsoleApp1'
+            echo "config target is ${config.target}"
             echo 'Building new feature'
             releasenotes(changes:"true")
         }catch(ex){
